@@ -8,7 +8,7 @@ diskutil unmountDisk /dev/diskN
 # To get feedback from dd, ctrl+t
 sudo dd if=/dev/zero of=/dev/rdiskN bs=1m #1M
 
-diskutil mountDisk /dev/disk1s2
+diskutil mountDisk /dev/diskNs2
 diskutil eraseDisk FAT32 NAME GPT /dev/diskN
 
 diskutil unmountDisk /dev/diskN
